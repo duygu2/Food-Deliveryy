@@ -12,7 +12,12 @@ class CustomerLogin : AppCompatActivity() {
 
         val ButtonCustomerLogin=findViewById<Button>(R.id.CustomerLoginBtn)
         ButtonCustomerLogin.setOnClickListener {
-            val intent= Intent(this,CustomerRegister::class.java)
+            val intent= Intent(this,CustomerMainActivity::class.java)
+            startActivity(intent)
+        }
+        val ButtonCustomerRegister=findViewById<Button>(R.id.CustomerLoginBtn)
+        ButtonCustomerLogin.setOnClickListener {
+            val intent= Intent(this,CustomerMainActivity::class.java)
             startActivity(intent)
         }
     }
