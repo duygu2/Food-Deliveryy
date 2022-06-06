@@ -1,9 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="20dp"
     tools:context=".RestaurantLogin">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/titleLabelTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Login"
+        style="@style/TextAppearance.AppCompat.Headline"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Login to account"
+        android:layout_below="@+id/titleLabelTv"
+        style="@style/TextAppearance.MaterialComponents.Caption"
+        ></TextView>
+
+    <!--email-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailTil"
+        android:layout_above="@+id/passwordTil"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/emailEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress">
+
+        </EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--password-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordTil"
+        app:passwordToggleEnabled="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+
+        <EditText
+            android:id="@+id/passwordEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Password">
+
+        </EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Login button-->
+    <Button
+        android:id="@+id/RestaurantLoginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Login"
+        android:layout_below="@+id/passwordTil"
+        android:layout_marginTop="10dp">
+
+    </Button>
+
+    <!--SignUp-->
+    <TextView
+        android:id="@+id/noAccountTv"
+        style="@style/TextAppearance.MaterialComponents.Caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="57dp"
+        android:text="If you do not have a restaurant account, register" />
+
+    <Button
+        android:id="@+id/RestaurantSignUp"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:text="Sign up" />
+
+</RelativeLayout>

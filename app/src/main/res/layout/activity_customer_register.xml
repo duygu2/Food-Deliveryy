@@ -1,9 +1,150 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="20dp"
     tools:context=".CustomerRegister">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/CustomerNameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/CustomerSurnameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CustomerNameTxt"
+        android:layout_alignStart="@+id/CustomerNameTxt"
+        android:layout_alignEnd="@+id/CustomerNameTxt"
+
+        android:layout_marginStart="0dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/CustomerMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CustomerSurnameTxt"
+        android:layout_alignStart="@+id/CustomerSurnameTxt"
+
+        android:layout_alignEnd="@+id/CustomerSurnameTxt"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="450dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress">
+
+    </EditText>
+
+
+    <EditText
+        android:id="@+id/CustomerPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignStart="@+id/CustomerMail"
+        android:layout_alignEnd="@+id/CustomerMail"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="282dp"
+        android:layout_marginEnd="0dp"
+        android:ems="10"
+        android:inputType="textPersonName">
+        android:text="Name"</EditText>
+
+    <EditText
+        android:id="@+id/CustomerPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CustomerPassword"
+        android:layout_alignStart="@+id/CustomerPassword"
+        android:layout_alignEnd="@+id/CustomerPassword"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="-8dp"
+        android:layout_marginTop="-9dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName">
+        android:text="Name"</EditText>
+
+    <EditText
+        android:id="@+id/CustomerCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CustomerPhoneNumber"
+
+        android:layout_alignStart="@+id/CustomerPhoneNumber"
+        android:layout_alignEnd="@+id/CustomerPhoneNumber"
+        android:ems="10"
+        android:inputType="textPersonName">
+        android:text="Name"</EditText>
+
+    <EditText
+        android:id="@+id/CustomerDistrict"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CustomerCity"
+
+        android:layout_alignStart="@+id/CustomerCity"
+        android:layout_alignEnd="@+id/CustomerCity"
+        android:ems="10"
+        android:inputType="textPersonName">
+        android:text="Name"</EditText>
+
+    <EditText
+        android:id="@+id/CustomerAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CustomerDistrict"
+
+        android:layout_alignStart="@+id/CustomerDistrict"
+        android:layout_alignEnd="@+id/CustomerDistrict"
+        android:ems="10"
+        android:inputType="textPersonName">
+        android:text="Name"</EditText>
+
+    <TextView
+        android:id="@+id/titleLabelTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Sign Up"
+        style="@style/TextAppearance.AppCompat.Headline"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Create a new account"
+        android:layout_below="@+id/titleLabelTv"
+        style="@style/TextAppearance.MaterialComponents.Caption"
+        ></TextView>
+
+
+    <Button
+        android:id="@+id/SignUpBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="278dp"
+        android:layout_marginBottom="24dp"
+        android:text="Sign Up">
+
+    </Button>
+
+
+</RelativeLayout>

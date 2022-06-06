@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.YemekSiparisi">
-        <activity android:name=".CustomerRegister"></activity>
+        <activity android:name=".RestaurantRegister"></activity>
+        <activity android:name=".RestaurantMainActivity" />
+        <activity android:name=".AdminRegister" />
+        <activity android:name=".AdminMainActivity" />
+        <activity android:name=".CustomerRegister" />
         <activity android:name=".AdminLogin" />
         <activity android:name=".RestaurantLogin" />
         <activity android:name=".CustomerLogin" />

@@ -84,6 +84,7 @@
         android:text="If you do not have a customer account, register" />
 
     <Button
+        android:id="@+id/CustomerSignUp"
         android:layout_width="200dp"
         android:layout_height="60dp"
         android:layout_alignParentBottom="true"
