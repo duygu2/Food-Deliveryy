@@ -29,11 +29,7 @@ class AdminLogin : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_admin_login)
 
-        val ButtonAdminLogin = findViewById<Button>(R.id.AdminLoginBtn)
-        ButtonAdminLogin.setOnClickListener {
-            val intent = Intent(this, AdminMainActivity::class.java)
-            startActivity(intent)
-        }
+
         val ButtonAdminRegister = findViewById<Button>(R.id.AdminSignUpBtn)
         ButtonAdminRegister.setOnClickListener {
             val intent = Intent(this, AdminRegister::class.java)
@@ -59,7 +55,7 @@ class AdminLogin : AppCompatActivity() {
 
             //handle click , signupactivity
 
-            binding.noAccountTv.setOnClickListener {
+            binding.AdminSignUpBtn.setOnClickListener {
                 startActivity(Intent(this, AdminRegister::class.java))
             }
 

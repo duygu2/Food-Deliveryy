@@ -8,143 +8,114 @@
     android:padding="20dp"
     tools:context=".CustomerRegister">
 
+
     <EditText
         android:id="@+id/CustomerNameTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="90dp"
-        android:ems="10"
-        android:inputType="textPersonName" />
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Name" />
 
     <EditText
-        android:id="@+id/CustomerSurnameTxt"
+        android:id="@+id/CustomSurnameTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/CustomerNameTxt"
+        android:layout_below="@+id/CustomerNameTxt"
         android:layout_alignStart="@+id/CustomerNameTxt"
         android:layout_alignEnd="@+id/CustomerNameTxt"
-
-        android:layout_marginStart="0dp"
-        android:ems="10"
-        android:inputType="textPersonName" />
-
-    <EditText
-        android:id="@+id/CustomerMail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/CustomerSurnameTxt"
-        android:layout_alignStart="@+id/CustomerSurnameTxt"
-
-        android:layout_alignEnd="@+id/CustomerSurnameTxt"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="450dp"
-        android:hint="Email"
-        android:inputType="textEmailAddress">
-
-    </EditText>
-
-
-    <EditText
-        android:id="@+id/CustomerPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:layout_alignStart="@+id/CustomerMail"
-        android:layout_alignEnd="@+id/CustomerMail"
-        android:layout_alignParentTop="true"
-        android:layout_centerVertical="true"
-        android:layout_marginTop="282dp"
-        android:layout_marginEnd="0dp"
-        android:ems="10"
-        android:inputType="textPersonName">
-        android:text="Name"</EditText>
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="1dp"
+        android:hint="Surname"/>
 
     <EditText
         android:id="@+id/CustomerPhoneNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/CustomerPassword"
+        android:layout_below="@+id/editTextTextPassword"
         android:layout_alignStart="@+id/CustomerPassword"
         android:layout_alignEnd="@+id/CustomerPassword"
         android:layout_centerInParent="true"
-        android:layout_marginStart="-8dp"
-        android:layout_marginTop="-9dp"
-        android:layout_marginEnd="8dp"
-        android:ems="10"
-        android:inputType="textPersonName">
-        android:text="Name"</EditText>
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="1dp"
+        android:hint="Phone Number" />
 
     <EditText
         android:id="@+id/CustomerCity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/CustomerPhoneNumber"
-
         android:layout_alignStart="@+id/CustomerPhoneNumber"
         android:layout_alignEnd="@+id/CustomerPhoneNumber"
-        android:ems="10"
-        android:inputType="textPersonName">
-        android:text="Name"</EditText>
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="1dp"
+        android:hint="City"
+        />
 
     <EditText
         android:id="@+id/CustomerDistrict"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/CustomerCity"
-
         android:layout_alignStart="@+id/CustomerCity"
         android:layout_alignEnd="@+id/CustomerCity"
-        android:ems="10"
-        android:inputType="textPersonName">
-        android:text="Name"</EditText>
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="1dp"
+        android:hint="District"
+        />
 
     <EditText
         android:id="@+id/CustomerAddress"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="70dp"
         android:layout_below="@+id/CustomerDistrict"
-
         android:layout_alignStart="@+id/CustomerDistrict"
         android:layout_alignEnd="@+id/CustomerDistrict"
-        android:ems="10"
-        android:inputType="textPersonName">
-        android:text="Name"</EditText>
-
-    <TextView
-        android:id="@+id/titleLabelTv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="Sign Up"
-        style="@style/TextAppearance.AppCompat.Headline"></TextView>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="Create a new account"
-        android:layout_below="@+id/titleLabelTv"
-        style="@style/TextAppearance.MaterialComponents.Caption"
-        ></TextView>
-
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="1dp"
+        android:hint="Address"/>
 
     <Button
         android:id="@+id/SignUpBtn"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="37dp"
-        android:layout_marginTop="278dp"
-        android:layout_marginBottom="24dp"
-        android:text="Sign Up">
+        android:layout_below="@+id/CustomerAddress"
+        android:layout_alignStart="@+id/CustomerAddress"
+        android:layout_alignEnd="@+id/CustomerAddress"
 
-    </Button>
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="1dp"
+        android:text="Sign Up" />
+
+    <EditText
+        android:id="@+id/CustomerPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/CustomerMail"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/CustomerMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:layout_alignBottom="@+id/CustomSurnameTxt"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginBottom="-44dp"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
 
 
 </RelativeLayout>

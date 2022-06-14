@@ -74,14 +74,14 @@
 
     <!--SignUp-->
     <TextView
-        android:id="@+id/noAccountTv"
+
         style="@style/TextAppearance.MaterialComponents.Caption"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="57dp"
-        android:text="If you do not have a customer account, register" />
+        android:text="If you do not have a admin account, register" />
 
     <Button
         android:id="@+id/AdminSignUpBtn"

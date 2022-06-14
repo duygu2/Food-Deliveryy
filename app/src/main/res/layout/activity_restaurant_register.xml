@@ -1,9 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RestaurantRegister">
+    android:padding="20dp"
+    tools:context=".CustomerRegister">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/RestaurantNameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:hint="Restaurant Name" />
+
+
+    <EditText
+        android:id="@+id/RestaurantMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RestaurantNameTxt"
+        android:layout_alignStart="@+id/RestaurantNameTxt"
+        android:layout_alignEnd="@+id/RestaurantNameTxt"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="1dp"
+        android:hint="Restaurant Mail" />
+
+    <EditText
+        android:id="@+id/RestaurantPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RestaurantMail"
+        android:layout_alignStart="@+id/RestaurantMail"
+        android:layout_alignEnd="@+id/RestaurantMail"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="1dp"
+        android:hint="Restaurant Password" />
+
+    <EditText
+        android:id="@+id/RestaurantPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RestaurantPassword"
+        android:layout_alignStart="@+id/RestaurantPassword"
+        android:layout_alignEnd="@+id/RestaurantPassword"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="1dp"
+        android:hint="Phone Number"
+        />
+
+    <EditText
+        android:id="@+id/RestaurantCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RestaurantPhoneNumber"
+        android:layout_alignStart="@+id/RestaurantPhoneNumber"
+        android:layout_alignEnd="@+id/RestaurantPhoneNumber"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="1dp"
+        android:hint="Restaurant City"
+        />
+
+    <EditText
+        android:id="@+id/RestaurantDistrict"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RestaurantCity"
+        android:layout_alignStart="@+id/RestaurantCity"
+        android:layout_alignEnd="@+id/RestaurantCity"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="1dp"
+        android:hint="Restaurant District" />
+
+    <EditText
+        android:id="@+id/RestaurantAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_below="@+id/RestaurantDistrict"
+        android:layout_alignStart="@+id/RestaurantDistrict"
+        android:layout_alignEnd="@+id/RestaurantDistrict"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="1dp"
+        android:hint="Restaurant Address" />
+
+    <Button
+        android:id="@+id/RestaurantSignUpBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RestaurantAddress"
+        android:layout_alignStart="@+id/RestaurantAddress"
+        android:layout_alignEnd="@+id/RestaurantAddress"
+
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="1dp"
+        android:text="Sign Up" />
+
+
+</RelativeLayout>
